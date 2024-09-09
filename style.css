@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-primary: #00CC99;
+  --bg-color-secondary: #FAB80D;
+  --bg-color-tertiary: #B7F59F;
+
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+
+body * {
+  font-size: 1.6rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+header {
+  padding: 2rem 4rem;
+  background-color: var(--bg-color-primary);
+  border-bottom: 6px solid var(--bg-color-secondary)
+}
+
+header img {
+  width: 5rem;
+  cursor: pointer;
+  
+  transition: all 0.1s;
+}
+
+header img:hover {
+  filter: brightness(0.8);
+}
+
+.title p {
+  color: white;
+  font-size: 3rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+header nav a:hover {
+  color: var(--bg-color-secondary);
+  text-decoration: underline;
+}
+
+main section.intro {
+  background-image: url("assets/cerrado.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  border-bottom: 6px solid var(--bg-color-secondary)
+}
+
+.intro div {
+  padding: 5rem;
+  width: 60%;
+  padding-bottom: 16rem;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  margin-bottom: 1em;
+}
+
+.intro p {
+  margin-bottom: 2em;
+}
+
+.intro a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  background-color: var(--bg-color-secondary);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+
+  transition: all 0.2s;
+}
+
+.intro a:hover {
+  filter: brightness(0.8);
+}
+
+
+
+
+
+
