@@ -26,6 +26,10 @@ body * {
   flex-wrap: wrap;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .gap-3 {
   gap: 3rem;
 }
@@ -103,8 +107,115 @@ main section.intro {
   filter: brightness(0.8);
 }
 
+.fauna {
+  /* width: 100%;
+  height: auto; */
+  
+  display: grid;
+  place-items: center;
+  background-color: #e9ffe1;
+}
 
+.fauna h3 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  position: relative;
+}
 
+.fauna .container {
+  width: 80%;
+  position: relative;
+}
 
+.fauna .container::after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(0, 143, 77), rgba(17, 225, 128, 0.649));
+}
+
+.fauna .container ul {
+  list-style: none;
+}
+
+.fauna .container ul li {
+  width: 50%;
+  /* padding: 1.5rem 2rem; */
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  position: relative;
+}
+
+.fauna .container ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translateX(-30px);
+}
+
+.fauna .container ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+}
+
+.fauna .container ul li .top img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.fauna .container ul li .middle {
+  padding: 20px 20px;
+}
+
+.fauna .container ul li .middle h2 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.fauna .container ul li .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 143, 77, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fauna .container ul li .circle::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: rgb(0, 143, 77);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fauna .container ul li:nth-child(odd) .circle {
+  left: auto;
+  right: -31px;
+  transform: translate(50%, -50%);
+}
+
+.fauna .container ul li:nth-child(even) .circle {
+  left: auto;
+  left: -29px;
+  transform: translate(-50%, -50%);
+}
+
+.swiper {
+  width: 100%;
+  height: 200px;
+}
 
 

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script type="module" src="script.js"></script>
+  
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +37,81 @@
         <a href="#">SAIBA MAIS</a>
       </div>
     </section>
-    <section class="fauna">Fauna</section>
-    <section class="flora">Flora</section>
+    <section class="fauna">
+      <h3>Fauna</h3>
+      <div class="container">
+        <ul class="timeline">
+          <li class="flex column">
+            <div class="top">
+              <img src="assets/lobo-guara.jpg" alt="lobo-guará">
+            </div>
+            <div class="middle">
+              <h2>Lobo-guará</h2>
+              <p>
+                Conhecido por sua pelagem avermelhada e pernas longas, 
+                é um dos maiores canídeos da América do Sul.
+              </p>
+            </div>
+            <span class="circle"></span>
+          </li>
+          <li>
+            <div class="top">
+              <img src="assets/arara-azul.jpg" alt="lobo-guará">
+            </div>
+            <div class="middle">
+              <h2>Arara-azul</h2>
+              <p>
+                Com seu plumagem vibrante, é uma ave icônica do cerrado.
+              </p>
+            </div>
+            <span class="circle"></span>
+          </li>
+          <li>
+            <div class="top">
+              <img src="assets/queixada.jpg" alt="lobo-guará">
+            </div>
+            <div class="middle">
+              <h2>Queixada</h2>
+              <p>
+                Um porco-do-mato que vive em bandos e é 
+                importante para a dispersão de sementes.
+              </p>
+            </div>
+            <span class="circle"></span>
+          </li>
+          <li>
+            <div class="top">
+              <img src="assets/tamandua.jpg" alt="lobo-guará">
+            </div>
+            <div class="middle">
+              <h2>Tamanduá</h2>
+              <p>
+                Facilmente reconhecido pelo seu focinho longo e língua 
+                extensível, é um especialista em formigas e cupins.
+              </p>
+            </div>
+            <span class="circle"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="flora flex column">
+      <div class="top">
+        <p>Flora</p>
+      </div>
+      <div class="card-slider swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </section>
     <section class="queimadas">Queimadas</section>
     <section class="sobrenos">Sobre Nós</section>
   </main>
