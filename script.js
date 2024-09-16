@@ -4,6 +4,16 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loopFillGroupWithBlank: true,
+
+  breakpoints: {
+    // Quando a tela for maior que 480px (tablets)
+    768: {
+        slidesPerView: 3,
+    },
+  },
 
   // If we need pagination
   pagination: {
