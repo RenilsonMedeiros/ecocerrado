@@ -10,7 +10,7 @@
   <title>Eco Cerrado</title>
 </head>
 <body>
-  <header id="home" class="flex block">
+  <header id="home" class="flex">
     <div class="title flex gap-3">
       <img src="assets/menu.svg" alt="menu-icon">
       <p>Eco Cerrado</p>
@@ -19,8 +19,8 @@
       <a href="#home">Home</a>
       <a href="#fauna">Fauna</a>
       <a href="#flora">Flora</a>
-      <a href="#ameaca">Ameaça</a>
-      <!-- <a href="#sobre-nos">Sobre Nós</a> -->
+      <a href="#ameaca">Ameaças</a>
+      <a href="#sobre-nos">Sobre Nós</a>
     </nav>
   </header>
   <main>
@@ -216,10 +216,50 @@
         </p> 
       </div>
     </section>
-    <!-- <section id="sobre-nos" class="sobrenos">Sobre Nós</section> -->
   </main>
-  <footer>
-
+  <footer id="sobre-nos">
+    <header class="flex">
+      <div class="title flex gap-3">
+      <img src="assets/menu.svg" alt="menu-icon">
+      <p>Sobre Nós</p>
+      </div>
+      <nav class="flex gap-3">
+        <a class="icon" href="#home"><img src="assets/chevron-right-solid.svg" alt="seta para cima"></a>
+      </nav>
+    </header>
+    <div class="cards-profiles">
+      <div class="card">
+        <div class="top"></div>
+        <div class="profile flex column">
+          <img class="picture" src="assets/profiles/renilson.jpeg" alt="foto de perfil do colaborador 1">
+          <p class="name">Renilson</p>
+          <p class="function">Desenvolvedor Junior</p>
+          <div class="icons">
+            <a href="https://www.instagram.com/renilson_medeiross" target="_blank"><img src="assets/profiles/Instagram.svg" alt="Instagram"></a>
+            <a href="https://github.com/renilsonmedeiros" target="_blank"><img src="assets/profiles/Github.svg" alt="Github"></a>
+            <a href="www.linkedin.com/in/renilson-medeiros" target="_blank"><img src="assets/profiles/Linkedin.svg" alt="Linkedin"></a>
+          </div>
+          <a href="https://wa.me/5598981258558?text=Olá, gostaria de solicitar um serviço." target="_blank">
+            <button>Enviar Mensagem</button>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"></div>
+        <div class="profile flex column">
+          <img class="picture" src="assets/profiles/laura.jpg" alt="foto de perfil do colaborador 1">
+          <p class="name">Laura</p>
+          <p class="function">Líder Técnica</p>
+          <div class="icons">
+            <a href="#"><img src="assets/profiles/Facebook.svg" target="_blank" alt="Facebook"></a>
+            <a href="https://www.instagram.com/rochalauracosta/" target="_blank"><img src="assets/profiles/Instagram.svg" alt="Instagram"></a>
+          </div>
+          <a href="https://wa.me/5598989176962?text=Olá, gostaria de solicitar um serviço." target="_blank">
+            <button>Enviar Mensagem</button>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
